@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지</title>
+</head>
+<body>
+    
+    <h3>#웹 페이지에 이미지 넣기</h3>
+
+    <p>
+        - src : 원하는 이미지의 경로 (로컬 또는 외부) <br>
+        - alt : 해당 이미지에 대한 설명 (웹 표준 필수 속성) <br>
+        - width : 이미지의 너비 조절 <br>
+        - height : 이미지의 높이 조절 <br>
+        - 이미지의 alt 속성은 쓸모없어 보이지만 여러 Screen Reader 프로그램들이
+        갖다 쓰는 속성이므로 배려하여 채워놓아야 한다
+    </p>
+    <img src="https://images.chosun.com/resizer/5RWpufchdlBjPzWIZnKrDum_yl0=/600x399/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/WO4SKPUA62ESBOT2QY7QB5XTAI.jpg" 
+    alt="펭귄 이미지">
+
+    <!-- 이미지의 너비 또는 높이를 하나만 설정하면 비율을 자동으로 유지해준다 -->
+    <img src="https://images.chosun.com/resizer/5RWpufchdlBjPzWIZnKrDum_yl0=/600x399/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/WO4SKPUA62ESBOT2QY7QB5XTAI.jpg" 
+    alt="펭귄 이미지" width="300">
+
+    <img src="https://images.chosun.com/resizer/5RWpufchdlBjPzWIZnKrDum_yl0=/600x399/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/WO4SKPUA62ESBOT2QY7QB5XTAI.jpg" 
+    alt="펭귄 이미지" width="300" height="300">
+
+    <img src="https://images.chosun.com/resizer/5RWpufchdlBjPzWIZnKrDum_yl0=/600x399/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/WO4SKPUA62ESBOT2QY7QB5XTAI.jpg" 
+    alt="펭귄 이미지" height="100">
+
+    <!-- 이미지 경로가 틀리는 등의 문제가 있다면 alt 속성에 설정한 값이 나온다 -->
+    <img src="https://images.chosun.com/esizer/5RWpufchdlBjPzWIZnKrDum_yl0=/600x399/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/WO4SKPUA62ESBOT2QY7QB5XTAI.jpg" 
+    alt="펭귄 이미지" height="100">
+</body>
+</html>
