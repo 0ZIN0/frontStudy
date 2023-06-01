@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_CSS 적용하기.html</title>
+    <style>
+        /*internal css*/
+        dl {
+            color: tomato;
+        }
+
+        dt {
+            color: deeppink;
+        }
+
+        dd {
+            color: cornflowerblue;
+        }
+        /*나중에 나온 스타일이 최종적으로 반영된다*/
+        dt {
+            color: yellowgreen;
+        }
+    </style>
+    <style>
+        dt {
+            color: indigo;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/css03.css">
+</head>
+<body>
+    
+    <h3># 웹 페이지에 스타일시트를 적용하는 3가지 방법</h3>
+
+    <dl>
+        <dt style="/* CSS Comment*/ color: green;">1. inline css(줄 내부 css)</dt>
+        <dd>
+            - HTML style attribute를 사용하는 방식 <br>
+            - 적용 우선 순위가 가장 높다 <br>
+            - style 속성의 값은 css 문법이다 <br>
+        </dd>
+        <dt>2. internal css(내부 css)</dt>
+        <dd>
+            - 페이지 내부의 style 태그를 사용하는 방식 <br>
+            - 더 나중에 나온 스타일이 우선 순위를 갖는다 <br>
+        </dd>
+        <dt>3. external css(외부 css)</dt>
+        <dd>
+            - 외부의 css 파일을 사용하는 방식 <br>
+            - &lt;link&gt; 태그를 사용해 외부의 css를 불러와서 사용한다 <br>
+            - 더 나중에 나온 스타일이 우선 순위를 갖는다 <br>
+        </dd>
+    </dl>
+</body>
+</html>

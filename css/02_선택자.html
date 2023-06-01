@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_선택자.html</title>
+    <style>
+        /*
+            선택자(Selector) {
+                속성(porperty) : 값(property value);
+                color : red;
+                background-color : blue;
+            }
+
+            선택자 : 원하는 HTML요소를 선택하기 위한 것
+            속성 : 선택한 요소의 어떤 속성을 설정할지 정하는 것
+            속성값 : 해당 속성의 값을 적는 곳
+
+        */
+        .important {
+            text-decoration: solid 1px underline;
+        }
+        .danger {
+            color: red;
+        }
+        * {
+            font-size: 1.2rem;
+        }
+
+        html {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3># 선택자 (Selector)</h3>
+    <ul>
+        <li id="item1" class="important">CSS에서 원하는 요소를 선택하기 위한 것</li>
+        <li id="item2" class="danger">tagname : 해당 HTML태그를 모두 선택한다</li>
+        <li id="item3" class="important danger">#id : 해당 id 속성을 지닌 요소를 선택한다 
+            (id 속성은 해당 웹페이지내에서 유일한 값이어야 한다)</li>
+        <li id="item4" class="important">.class : 해당 class 속성을 지닌 요소를 모두 선택한다
+            (일반적으로 class 속성은 여러 요소에 같은 이름으로 존재한다)
+        </li>
+        <li>* : 모든 요소 선택 </li>
+        <li>html : 모든 요소 선택</li>
+        <li>공백 : 모든 자손 요소 선택</li>
+        <li>&lt; : 자식 요소 선택</li>
+        <li>, : 여러개의 선택자를 사용할 때</li>
+    </ul>
+    <a href="https://flukeout.github.io/">CSS diner 하러가기</a>
+</body>
+</html>
