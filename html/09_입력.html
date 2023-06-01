@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력받는 곳 만들기</title>
+</head>
+<body>
+
+    <h3># input 태그를 사용해 사용자로부터 다양한 입력을 받는다</h3>
+
+    <table border="3">
+        <tr>
+            <th>Type</th>
+            <th>Example</th>
+            <th>Description</th>
+            <th>Usage</th>
+        </tr>
+        <tr>
+            <td>type="text"</td>
+            <td>
+                <input type="text" value="Default value">
+            </td>
+            <td>일반적인 텍스트 입력 칸</td>
+            <td>아이디 입력, 글제목 등</td>
+        </tr>
+        <tr>
+            <td>type="password"</td>
+            <td>
+                <!-- placeholder 속성으로 입력 안내문을 지정해놓을 수 있다-->
+                <input type="password" placeholder="비밀번호를 입력하세요..">
+            </td>
+            <td>입력하면 *로 나오는 입력란</td>
+            <td>회원 비밀번호, 글 비밀번호 등</td>
+        </tr>
+        <tr>
+            <td>type="number"</td>
+            <td>
+                <input type="number" min="0" max="10" value="0" step="2">
+            </td>
+            <td>숫자 입력란</td>
+            <td>수량 등</td>
+        </tr>
+        <tr>
+            <td>type="date"</td>
+            <td>
+                <input type="date" value="1999-12-15">
+            </td>
+            <td>날짜 선택란</td>
+            <td>예약일자 등</td>
+        </tr>
+        <tr>
+            <td>type="radio"</td>
+            <td>
+                <!-- (input[type="radio" id="radio-btn$"]+br)*4-->
+                <!-- name 속성을 통해 카테고리를 맞춰줘야 하나만 선택할 수 있다-->
+                <!-- 해당 선택 아이템의 라벨을 설정할 때는 해당 요소의 id값을 사용한다 -->
+                <!-- checked 속성을 적으면 기본값으로 설정할 수 있다 -->
+                <input type="radio" id="samkim1" name="samkim">
+                <label for="samkim1">참치마요</label><br>
+                <input type="radio" id="samkim2" name="samkim">
+                <label for="samkim2">스팸김치볶음</label><br>
+                <input type="radio" id="samkim3" name="samkim" checked>
+                <label for="samkim3">고추장불고기</label><br>
+                <input type="radio" id="samkim4" name="samkim">
+                <label for="samkim4">전주비빔</label><br>
+            </td>
+            <td>여러개의 옵션 중 하나만 선택해야하는 경우</td>
+            <td>성별 등</td>
+        </tr>
+        <tr>
+            <td>type="checkbox"</td>
+            <td>
+                <input type="checkbox" name="genre" id="genre1" checked>
+                <label for="genre1">스릴러</label> <br>
+                <input type="checkbox" name="genre" id="genre2" checked>
+                <label for="genre2">코믹</label> <br>
+                <input type="checkbox" name="genre" id="genre3" checked>
+                <label for="genre3">SF</label> <br> 
+            </td>
+            <td>같은 카테고리 내에서 복수선택이 가능한 버튼</td>
+            <td>설문조사 등</td>
+        </tr>
+        <tr>
+            <td>&lt;textarea&gt;</td>
+            <td><textarea cols="30" rows="10"></textarea>
+            </td>
+            <!-- 사이즈 재설정을 막는 style 옵션이 있다 -->
+            <td>긴 내용의 텍스트를 입력받는 태그 (input 아님)</td>
+            <td>글 내용 등</td>
+        </tr>
+        <tr>
+            <td>&lt;select&gt;, &lt;option&gt;</td>
+            <td>
+                <select>
+                    <option value="">한국</option>
+                    <option value="">미국</option>
+                    <option value="">일본</option>
+                    <option value="" selected>러시아</option>
+                    <!---->
+                </select>
+            </td>
+            <td>여러 옵션 중 하나를 선택하는 태그</td>
+            <td>국가 선택 등</td>
+        </tr>
+    </table>
+
+</body>
+</html>
