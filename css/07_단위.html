@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>07_단위.html</title>
+</head>
+<body>
+    
+    <h3># 절대 길이 단위</h3>
+
+    <ul>
+        <li>px: 픽셀(화소)</li>
+        <li>mm: 밀리미터</li>
+        <li>cm: 센치미터</li>
+        <li>in: 인치</li>
+    </ul>
+
+    <div style="border: solid black 3px; width: 100px; height: 100px;">
+        100px
+    </div>
+
+    <div style="border: solid black 3px; width: 100mm; height: 100mm;">
+        100px
+    </div>
+
+    <div style="border: solid black 3px; width: 5cm; height: 5cm;">
+        100px
+    </div>
+
+    <div style="border: solid black 3px; width: 1in; height: 1in;">
+        100px
+    </div>
+
+    <h3># 상대 길이 단위</h3>
+
+    <ul>
+        <li>em : 해당 요소의 font-size에 비례한 크기 설정</li>
+        <li>rem : 현재 페이지 전체(html)에 설정된 font-size에 비례한 크기 설정</li>
+        <li>
+            vw : viewport width에 비례한 크기 설정 <br>
+                1vw는 화면 너비의 1%크기를 의미한다
+        </li>
+        <li>
+            vh : viewport height에 비례한 크기 설정 <br>
+                1vh는 화면 높이의 1%크기를 의미한다
+        </li>
+    </ul>
+
+    <div style="border: solid black 3px; width : 20em; height: 20em; font-size: 20px">
+        em (해당 요소의 font-size 비례)
+    </div>
+
+    <style>
+
+        html {
+            font-size: 10px;
+        }
+    </style>
+
+    <div style="border: solid black 3px; width : 20rem; height: 20rem; font-size: 30px">
+        rem (html의 font-size 비례)
+    </div>
+
+    <div style="border: solid black 3px; width : 30vw; height: 30vw; font-size: 30px">
+        30 vw
+    </div>
+
+    <div style="border: solid black 3px; width : 30vh; height: 30vh; font-size: 30px">
+        30 vh
+    </div>
+    
+</body>
+</html>

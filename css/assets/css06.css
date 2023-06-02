@@ -1,0 +1,41 @@
+.margin-test-div {
+    border: solid 5px black;
+    font-size:  30px;
+}
+.margin-test-div:first-of-type {
+    margin: 50px;
+}
+
+.margin-test-div:nth-of-type(2) {
+    margin: 25px;
+}
+
+.margin-test-div:nth-of-type(3) {
+    margin: 80px 300px 30px 10px;
+}
+
+#padding-test {
+    border: solid 5px black;
+    margin: 20px 100px;
+    height: 200px;
+    padding: 50px;
+    overflow: auto; /*내용이 요소를 넘칠 때 사용하는 옵션*/ 
+}
+
+/* id 속성이 -box로 끝나는 요소들에 대한 스타일 설정 */
+[id$="-box"] {
+    border: solid 15px black;
+    width: 500px;
+    height: 500px;
+    font-size: 20px;
+    padding: 30px;
+    margin: 50px auto;
+}
+
+#content-box {
+    box-sizing: content-box; /* box-sizing property의 기본값 */
+}
+
+#border-box {
+    box-sizing: border-box;
+}
