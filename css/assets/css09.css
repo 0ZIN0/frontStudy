@@ -1,0 +1,47 @@
+#shadow1 {
+    font-size: 35px;
+    text-shadow: 5px -5px 3px red;
+}
+
+#shadow2 {
+    color: white;
+    font-size: 35px;
+    text-shadow: 0 0 15px black,
+                0 0 13px red,
+                0 0 8px red,
+                0 0 3px red;
+}
+
+#shadow3 {
+    font-size: 50px;
+    color: #FFFFFF;
+background: #b8b8b8;
+text-shadow: 4px 3px 0 #7A7A7A;
+}
+
+#box-shadow1 {
+    width: 200 px;
+    height: 200px;
+    font-size: 30px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px, 
+                2px 2px 3px,
+                3px 3px 3px; 
+}
+
+#box-shadow2 {
+    width: 200 px;
+    height: 200px;
+    font-size: 30px;
+    padding: 10px;
+    -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#box-shadow3 {
+    width: 200 px;
+    height: 200px;
+    font-size: 30px;
+    padding: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}

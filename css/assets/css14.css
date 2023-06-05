@@ -1,0 +1,143 @@
+#div1 {
+    border: solid 5px black;
+    text-align: justify;
+}
+
+#div1::after {
+    content: "여기에 마무리 내용";
+    display: block;
+    clear: right;
+}
+
+#img1 {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#img2 {
+    float: right;
+    width: 300px;
+    clear: left; /*다른 float 요소가 왼쪽에 없게 해달라는 뜻*/
+    margin-left: 15px;
+}
+
+#div2 {
+    border: solid 3px black;
+    background-color: beige;
+}
+
+#div2 > div {
+    box-sizing: border-box;
+    border: solid 3px darkred;
+    background-color: salmon;
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+    font-size: 25px;
+    float: left;
+}
+
+#div2::after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+#div2 > div:first-child {
+    width: 100%;
+    
+}
+
+#div2 > div:nth-child(2) {
+    width: 75%;
+    height: 800px;
+    background-color: brown;
+}
+
+#div2 > div:nth-child(3) {
+    width: 25%;
+    height: 600px;
+    background-color: coral;
+}
+
+#div2 > div:last-child {
+    width: 25%;
+    height: 200px;
+    background-color: crimson;
+}
+
+#div3 {
+    border: solid 3px black;
+    background-color: beige;
+}
+
+#div3 > div {
+    box-sizing: border-box;
+    border: solid 3px rebeccapurple;
+    background-color: violet;
+    color: white;
+    font-size: 25px;
+    float: left;
+}
+
+#div3::after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+#div3 > div:first-child {
+    width : 100%;
+    height: 150px;
+}
+
+#div3 > div:nth-child(2) {
+    width: 20%;
+    height: 900px;
+}
+
+#div3 > div:nth-child(3) {
+    width: 60%;
+    height: 900px;
+}
+
+#div3 > div:nth-child(3) > div{
+    box-sizing: border-box;
+    border: solid 2px rebeccapurple;
+    background-color: violet;
+    font-size: 25px;
+    float: left;
+}
+
+#div3 > div:nth-child(3) > div::after{
+    content: "";
+    display: block;
+    clear: left;
+}
+
+
+#div3 > div:nth-child(3) > div:first-child{
+    width: 100%;
+    height: 200px;
+}
+
+#div3 > div:nth-child(3) > div:nth-child(2){
+    width: 100%;
+    height: 500px;
+}
+
+#div3 > div:nth-child(3) > div:nth-child(3){
+    width: 100%;
+    height: 200px;
+}
+
+#div3 > div:nth-child(4) {
+    width: 20%;
+    height: 900px;
+}
+#div3 > div:nth-child(5) {
+    width: 100%;
+    height: 150px;
+}
+

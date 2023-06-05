@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_가상클래스.html</title>
+    <link rel="stylesheet" href="./assets/css12.css">
+</head>
+<body>
+    
+    <h3>#Pseudo class</h3>
+
+    <ul>
+        <li>선택자 뒤에 추가해 해당 요소의 특정 상황만을 선택하는 것</li>
+        <li>선택자 뒤에 :을 붙여 원하는 특정 상황만을 선택할 수 있다</li>
+    </ul>
+
+    <h3># 종류</h3>
+
+    <ul>
+        <li>:first-child - 해당 요소가 첫 번재 자식인 상황에 적용할 스타일</li>
+        <li>:first-of-type - ...</li>
+        <li>:hover - 마우스가 해당 요소 위에 올려져있는 상황</li>
+        <li>:link - 해당 링크가 방문한적 없는 링크인 상황</li>
+        <li>:active - 해당 링크를 클릭하는 중인 상황</li>
+        <li>:visited - 해당 링크에 방문한 적이 있는 상황</li>
+    </ul>
+    <div>
+        <a id="test-link" href="https://naver.com">네이버로</a>
+
+    </div>
+
+
+    <button onclick="addchild()">click!</button>
+    <div id="out"></div>
+    <script>
+        const out = document.getElementById('out');
+        num = 1;
+        function addchild() {
+            out.innerHTML += '<div>' + num++ + '</div>';
+        }
+    </script>
+</body>
+</html>

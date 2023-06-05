@@ -1,0 +1,30 @@
+#test-div {
+    font-size: 20px;
+    padding: 5px;
+    border: solid blakc 3px;
+    text-indent: 1.0em;
+}
+
+#test-div::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#test-div::first-line {
+    color: red;
+}
+
+#test-div::selection {
+    color: white;
+    background-color: blue;
+}
+
+#test-div::before {
+    content: "요소의 맨 앞입니다~";
+    border: 1px solid red;
+}
+
+#test-div::after {
+    content: "요소의 맨 뒤입니다~";
+    border: solid 1px black;
+}

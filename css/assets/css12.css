@@ -1,0 +1,47 @@
+#out > * {
+    box-sizing: border-box;
+    border: solid 3px black;
+    border-radius: 13px;
+    padding: 3px;
+    width: 80px;
+    height: 80px;
+}
+
+#out > :first-child {
+    color: red;
+    font-size: 20px;
+}
+
+#out > :nth-child(even) {
+    color: orange;
+    font-size: 20px;
+}
+
+#out > :last-child {
+    color: slateblue;
+    font-size: 20px;
+}
+
+#test-link {
+    font-size: 30px;
+}
+
+#test-link:link {
+    color : yellow;
+}
+
+#test-link:visited {
+    color : black;
+}
+
+
+
+#out > :hover {
+    color: salmon;
+    font-size: 25px;
+}
+
+#test-link:active {
+    background-color: black;
+    color : yellow;
+}
