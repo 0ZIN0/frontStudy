@@ -1,0 +1,30 @@
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+.border {
+    border: solid 3px black;
+}
+
+.red {
+    border-color: red;
+}
+
+.orange {
+    border-color: orange;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.green {
+    border-color: green;
+}
+
+.purple {
+    border-color: purple;
+}

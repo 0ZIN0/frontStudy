@@ -1,0 +1,17 @@
+#grid-container {
+    display: grid;
+    /*
+        # grid-template-columns
+
+        - 컬럼의 개수 및 너비를 지정
+        - fr을 통해 너비의 비율을 설정할 수 있다
+    */
+    grid-template-columns: 1fr 3fr 100px; /* 컬럼의 개수 및 너비를 지정 */
+    grid-template-rows: 80px 500px 100px; /* 행의 개수 및 높이를 지정 */
+    column-gap: 5px; /* 각 컬럼 사이의 간격 설정 */
+    row-gap: 10px; /* 각 행 사이의 간격 설정 */
+}
+
+#grid-container > div {
+    border: 3px black solid;
+}

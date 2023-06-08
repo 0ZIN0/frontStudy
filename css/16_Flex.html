@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_Flex.html</title>
+    <link rel="stylesheet" href="./assets/css16.css">
+    <script src="https://kit.fontawesome.com/f743607fcc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3># display: flex</h3>
+
+    <ul>
+        <li>내부 요소들의 크기를 자동으로 조절해주는 display 속성</li>
+        <li>display: flex로 설정한 요소는 flex-container가 되고
+            해당 컨테이너 내부의 요소들은 flex-item이 된다</li>
+    </ul>
+
+    <!-- container -->
+    <div id="flex1">
+        <!-- items -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h3># flex-direction: row</h3>
+
+    <div class="flex-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <hr>
+
+    <div id="row2" class="flex-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <hr>
+
+    <div id="row3" class="flex-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+    <h3># flex-direction: column</h3>
+
+    <div id="column1" class="flex-column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <hr>
+
+    <div id="column2" class="flex-column">
+        <div>1</div>
+        <div>2</div>
+        <div>
+            <a href="https://flexboxfroggy.com/#ko">
+                <i class="fa-sharp fa-solid fa-frog fa-bounce" style="color: #fc9afe;"></i>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="column3" class="flex-column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+    <h3># flex-wrap: wrap을 통해 레이아웃을 구성할 수 있다</h3>
+
+
+    <hr>
+
+    
+
+    <div id="wrap" class="flex-row">
+        <div>a</div>
+        <div>
+            <div>b-1</div>
+            <div>b-2</div>
+        </div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <hr>
+
+    <div id="wrap2" class="flex-row">
+        
+        <div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Welcome Gradient
+                    </li>
+                    <li style="display: flex; justify-content: space-between;">
+                        <a>#abcde</a> <a>#EEEEE</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Welcome Pine
+                    </li>
+                    <li>
+                        #abcde
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Welcome White
+                    </li>
+                    <li>
+                        #abcde
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Pistachio
+                    </li>
+                    <li>
+                        #abcde
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Sea
+                    </li>
+                    <li>
+                        #abcde
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Land
+                    </li>
+                    <li>
+                        #abcde
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Grass
+                    </li>
+                    <li>
+                        #abcde
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Metal
+                    </li>
+                    <li>
+                        #abcde
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul type="none">
+                    <li>Primary</li>
+                    <li>
+                        Steel
+                    </li>
+                    <li>
+                        #abcde
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div> 
+    </div>
+    
+    <hr>
+
+    <div id="quiz-div">
+        <div>
+            <div>Primary</div>
+            <div>Welcome Gradient</div>
+            <div>#bcdc49</div>
+            <div></div>
+            <div>#1b5cfd</div>
+        </div>
+        <div>
+            <div>Primary</div>
+            <div>Welcome Pine</div>
+            <div>#07404b</div>
+        </div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+</body>
+</html>

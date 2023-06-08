@@ -1,0 +1,381 @@
+#flex1 {
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(133, 201, 162);
+
+    /*
+        # flex-direction : 이 컨테이너가 items를 나열하는 방향을 결정
+
+        - row : 가로로 나열하기 (왼 -> 오)
+        - row-reverse : 가로로 나열하기 (오->왼)
+        - column : 세로로 나열하기 (위-> 아래)
+        - column-reverse : 세로로 나열하기 (아래 -> 위)
+    */
+    flex-direction: row-reverse;
+
+    /*
+        # justify-content : flex-direction 방향의 정렬 설정    
+    
+        - flex-start: flex-direction의 시작 지점으로 정렬
+        - flex-end: flex-direction의 끝 지점으로 정렬
+        - space-around: 바깥쪽에 약간 여백을 준 후 적당히 배치하기
+        - space-between: 바깥쪽에 여백 없이 적당히 배치하기
+    */
+    justify-content: flex-start;
+
+    /*
+        # align-items: flex-direction 기준 수직 방향의 정렬 설정
+
+        - flex-start : flex-direction의 시작 지점으로 정렬
+        - flex-end: flex-direction의 끝 지점으로 정렬
+        - stretch: 모든 아이템들을 최대한 늘린다
+        - center: 가운데 위치로 배치한다
+        - baseline: 모든 아이템들의 컨텐츠 위치를 기준으로 정렬한다
+
+    */
+    align-items: flex-end;
+    height: 500px;
+}
+
+#flex1 > * {
+    width: 100px;
+    padding: 20px;
+    background-color: seagreen;
+    color: white;
+    font-size: 25px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+[class^="flex-"] {
+    background-color: rgb(112, 179, 141);
+}
+
+[class^="flex-"] > * {
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: seagreen;
+    font-size: 25px;
+}
+
+#row2 {
+    justify-content: space-between;
+}
+
+#row2 > :nth-child(2) {
+    background-color: orange;
+    /* flex-container 내부에서 해다 아이템의 우선 순위를 설정*/
+    order: -1; 
+    align-self: center;
+}
+
+#row2 > :nth-child(3) {
+    /*flex-container 내부에서 해당 아이템의 수직정렬을 설정*/
+    align-self: flex-end; 
+}
+
+#row3 {
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#row3 > :first-child {
+    padding-top: 80px;
+    height: 130px;
+}
+
+#row3 > :nth-child(2) {
+    padding-bottom: 80px;
+    height: 130px;
+}
+
+#row3 > :nth-child(3) {
+    width: 100px;
+    height: auto;
+}
+
+#column2 {
+    justify-content: space-evenly;
+}
+
+#column2 > :nth-child(2) {
+    align-self: flex-end;
+}
+
+#column2 > :nth-child(3) {
+    display: flex;
+    align-self: center;
+    order: -1;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+#column3 {
+    justify-content: space-around;
+}
+
+#wrap {
+    /*
+        wrap: 더 이상 넣을 공간이 없으면 줄을 바꾼다
+        nowrap: 더 이상 넣을 공간이 없으면 item의 크기를 줄인다
+    */
+    flex-wrap : wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+    height: 600px;
+    
+}
+
+#wrap > div {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+#wrap > div:first-child {
+    width: 70%;
+    height: 50%;
+}
+
+#wrap > div:nth-child(2) {
+    width: 30%;
+    height: 50%;
+    display: column;
+    padding: 0;
+}
+
+#wrap > div:nth-child(2) >:first-child {
+    color: black;
+    height: 50%;
+    background-color: white;
+}
+
+#wrap > div:nth-child(2) >:last-child {
+    width: 100%;
+    height: 50%;
+    background-color: crimson;
+}
+
+#wrap > div:nth-child(3) {
+    width: 30%;
+    height: 50%;
+    background-color: skyblue;
+}
+
+#wrap > div:nth-child(4) {
+    width: 70%;
+    height: 50%;
+    background-color: cornflowerblue;
+}
+
+#wrap2 {
+    flex-wrap : wrap;
+    height: 1000px;
+}
+
+#wrap2 > div {
+    color: black;
+    display: flex;
+}
+
+#wrap2 > div:first-child {
+    width: 100%;
+    height: 500px;
+}
+
+#wrap2 >div:first-child > div {
+    width: 100%;
+}
+
+#wrap2 > div:first-child > div > ul {
+    padding : 25px;
+}
+
+#wrap2 >div:first-child > div > ul > li:first-child{
+    font-size: small; 
+    margin-bottom: 20px;
+}
+
+#wrap2 >div:first-child > div > ul > li:nth-child(3){
+    font-size: small; 
+    padding-top: 300px;
+}
+
+#wrap2 > div:first-child > :first-child {
+    background : linear-gradient(to right, yellow, skyblue)
+}
+
+#wrap2 > div:first-child > :nth-child(2) {
+    color: white;
+    background-color: rgb(42, 47, 35);
+}
+#wrap2 > div:first-child > :nth-child(3) {
+    background-color: white;
+}
+
+#wrap2 > div:last-child {
+    width: 100%;
+    height: 500px;
+}
+
+#wrap2 > div:last-child > div {
+    width: 100%;
+}
+
+#wrap2 > div:last-child > div > ul {
+    padding : 25px;
+}
+
+#wrap2 >div:last-child > div > ul > li:first-child{
+    font-size: small; 
+    margin-bottom: 20px;
+}
+
+#wrap2 >div:last-child > div > ul > li:nth-child(3){
+    font-size: small; 
+    padding-top: 300px;
+}
+
+#wrap2 > div:last-child > :first-child {
+    background-color: rgb(189, 220, 233);
+}
+
+#wrap2 > div:last-child > :nth-child(2) {
+    background-color: rgb(108, 176, 179);
+}
+
+#wrap2 > div:last-child > :nth-child(3) {
+    background-color: rgb(214, 228, 25);
+}
+
+#wrap2 > div:last-child > :nth-child(4) {
+    background-color: rgb(121, 161, 39);
+}
+
+#wrap2 > div:last-child > :nth-child(5) {
+    background-color: lightgray;
+}
+
+#wrap2 > div:last-child > :nth-child(6) {
+
+    background-color: gray;
+}
+
+#quiz-div {
+    display: flex; /* 이 요소를 flex container로 만든다*/
+    flex-wrap: wrap;
+    width: 1000px; 
+}
+
+#quiz-div > div:first-child {
+    width: 300px;
+    height: 500px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    background : linear-gradient(to right, yellow, skyblue);
+    flex-wrap: wrap;
+}
+
+#quiz-div > div:first-child > * {
+    border: solid 1px #ffffff;
+}
+
+#quiz-div > div:first-child > :first-child {
+    width: 100%;
+    height: 5%;
+}
+
+#quiz-div > div:first-child > :nth-child(2) {
+    width: 100%;
+    height: 90%;
+    font-size: large;
+}
+
+#quiz-div > div:first-child > :nth-child(3) {
+    width: 30%;
+    height: 5%;
+}
+
+#quiz-div > div:first-child > :nth-child(4) {
+    width: 40%;
+    height: 5%;
+}
+
+#quiz-div > div:first-child > :nth-child(5) {
+    width: 30%;
+    height: 5%;
+}
+
+
+#quiz-div > div:nth-child(2) {
+    width: 300px;
+    height: 500px;
+    background-color: #07404b;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#quiz-div > div:nth-child(2) > * {
+    border: solid 1px #ffffff;
+}
+
+#quiz-div > div:nth-child(2) > :first-child {
+    height: 5%;
+}
+
+#quiz-div > div:nth-child(2) > :nth-child(2) {
+    height: 90%;
+}
+
+#quiz-div > div:nth-child(2) > :last-child {
+    height: 5%;
+}
+
+#quiz-div > div:nth-child(3) {
+    width: 300px;
+    height: 500px;
+}
+
+#quiz-div > div:nth-child(4) {
+    width: 150px;
+    height: 500px;
+}
+
+#quiz-div > div:nth-child(5) {
+    width: 150px;
+    height: 500px;
+}
+
+#quiz-div > div:nth-child(6) {
+    width: 150px;
+    height: 500px;
+}
+
+#quiz-div > div:nth-child(7) {
+    width: 150px;
+    height: 500px;
+}
+
+#quiz-div > div:nth-child(8) {
+    width: 150px;
+    height: 500px;
+}
+
+#quiz-div > div:nth-child(9) {
+    width: 150px;
+    height: 500px;
+}
