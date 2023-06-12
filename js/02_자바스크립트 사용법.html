@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_자바스크립트 사용법.html</title>
+</head>
+<body>
+    
+    <h3># 사용 방식 3가지</h3>
+
+    <ul id="abc" >
+        <li onmouseover="this.style.color='red';"
+            onmouseleave="this.style.color='black';">
+            inline : 앞에 on이 붙은 HTML속성(attribute)에 사용</li>
+        <li>internal : script 태그로 페이지 내부에서 사용</li>
+        <li>external : script 태그로 파일을 불러와서 사용</li>
+    </ul>
+
+    <!-- internal script-->
+    <script>
+        // console.log() : 자바스크립트의 sysout
+        console.log(document);
+
+        // console.dir() : 요소를 전달하면 좀 더 계층적으로 보여주는 sysout
+        console.dir(document);
+        console.dir(document.body);
+    </script>
+
+    <!-- external script -->
+    <script src="./assets/js02.js"></script>
+</body>
+</html>

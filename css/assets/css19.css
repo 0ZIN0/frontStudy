@@ -1,0 +1,24 @@
+#gugudan {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);  /* 컬럼의 개수 및 너비를 지정 */
+    grid-template-rows: repeat(8, 1fr); /* 행의 개수 및 높이를 지정 */
+    
+    border: solid 3px plum;
+}
+
+#gugudan > * {
+    border: solid 1px plum;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.dan {
+    color: lightblue;
+    font-weight: bold;
+    text-align: center;
+    background-color: darkslateblue;
+}
+
+.value {
+    background-color: rgb(199, 190, 255);
+}
