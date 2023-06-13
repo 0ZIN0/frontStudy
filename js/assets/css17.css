@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+#out {
+    border: solid 3px black;
+    position: relative;
+    height: 500px;
+}
+
+#out > div {
+    width : 100px;
+    height: 100px;
+    background-color: red;
+}

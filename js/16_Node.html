@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_Node.html</title>
+    <link rel="stylesheet" href="./assets/css16.css">
+</head>
+<body>
+    
+    <h3># Node</h3>
+
+    <ul>
+        <li>document 내부에 있는 모든 것을 Node라고 한다</li>
+        <li>Element보다 좀 더 작은 개념이다</li>
+        <li>하나의 요소를 Element NOde와 Text Node로 나눌 수 있다</li>
+        <li>document 내부의 주석들은 Comment Node라고 부른다</li>
+        <li>자바스크립트로 새 노드 객체를 생성하여 기존 노드에 추가할 수 있다</li>
+    </ul>
+
+    <h3># Node를 사용해 새 요소 추가하기</h3>
+
+    <!-- push로 추가된 아이템과 shift로 추가된 아이템의 색이 다르게 만들 것 -->
+    <button onclick="pushItem();">push!</button>
+    <button onclick="popItem()">pop!</button>
+    <button onclick="shiftItem();">shift!</button>
+    <button onclick="unshiftItem()">unshift!</button>
+    <div id="out"></div>
+
+
+    <script src="./assets/js16.js"></script>
+</body>
+</html>
